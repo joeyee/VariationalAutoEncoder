@@ -198,7 +198,7 @@ $\sum_j log(\frac{p(x,z_j)}{q(z_j)})$
 The problem here is that we can't back-propagate this way through the sampled values. Instead we can use the 
 [reparametrization trick](https://stats.stackexchange.com/questions/199605/how-does-the-reparameterization-trick-for-vaes-work-and-why-is-it-important)
 where we sample from $\epsilon \sim  N(0, 1)$ and use simple linear transformation $z = f_e(x) + g_e(x)\cdot \epsilon$ to obtain sample
-from $N(f_e(z), g_e(z)$. This way we back-propagate through encoder but of course not through the $\epsilon$.
+from $N(f_e(x), g_e(x)$. This way we back-propagate through encoder but of course not through the $\epsilon$.
 
 ![reparametrization_trick](images/reparametrization_trick.png)
 
