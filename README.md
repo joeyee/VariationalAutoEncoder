@@ -185,7 +185,7 @@ benefits of this distribution is that is a
 [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior) (posterior has the same probability distribution as the prior).
 
 Let's assume that $p(z) \sim  N(0, 1)$ and $p(x|z) \sim  N(f_d(z), c\cdot I)$ where $f_d(z)$ the decoder neural network. We model our surrogate
-posterior $q(z) \sim  p(z|x)$ using the encoder neural network where $q(z) \sim  N(f_e(x), g_e(x)$.
+posterior $q(z) \sim  p(z|x)$ using the encoder neural network where $q(z) \sim  N(f_e(x), g_e(x))$.
 
 ### Re-parametrization trick
 
